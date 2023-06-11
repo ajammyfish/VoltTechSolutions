@@ -1,27 +1,429 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background-color: white;
 }
+
+nav {
+    top: 0;
+    z-index: 3;
+    color: white;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    padding-bottom: 10px;
+}
+
+.burger {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    display: none;
+}
+
+.line1open {
+    transform: rotate(45deg) translate(8px, 8px);
+    transition: 1s;
+}
+
+.line3open {
+    transform: rotate(-45deg) translate(8px, -8px);
+    transition: 1s;
+}
+
+.line2open {
+    transform: translateX(-40px);
+    visibility: hidden;
+    transition: 1s;
+}
+
+.line1, .line2, .line3 {
+    height: 6px;
+    width: 30px;
+    background-color: black;
+    border-radius: 3px;
+    transition: 1s;
+    transition: 1s;
+}
+
+.navcontainer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    border-bottom: 3px solid white;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        width: 400px !important;
+        height: 250px !important;
+        max-width: 90% !important;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .home-top {
+        padding: 40px 10px 40px 10px !important;
+        text-align: center;
+        width: 90% !important;
+        height: fit-content !important;
+    }
+
+    .home-mission {
+        margin-top: 80px !important;
+        height: fit-content !important;
+        padding: 40px 10px 40px 10px !important;
+        width: 90% !important;
+        margin-bottom: 80px !important;
+    }
+
+    .missionheading {
+        text-align: center;
+    }
+
+    .home-mission ul {
+        margin-left: 20px;
+    }
+
+    .navcontainer .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .home-content {
+        display: flex !important;
+        flex-direction: column;
+        height: 100% !important;
+    }
+
+    .home-content p {
+        width: 90% !important;
+        margin: auto !important;
+    }
+    .home-content .tools {
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .logo {
+        margin-left: -50px;
+    }
+}
+.nav-links {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.dropdown {
+    display: flex;
+    transform: scaleY(1) !important;
+    opacity: 1 !important;
+}
+
+.nav-links-min {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    opacity: 0;
+    transform-origin: top right;
+    transform: scaleY(0);
+}
+
+.nav-links-min li {
+    border-bottom: 1px solid grey;
+    width: 100%;
+    height: 60px;
+}
+
+.nav-links-min li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.nav-links a:hover {
+    font-size: 22px;
+    transition: 1s;
+    color: rgb(205, 208, 255);
+}
+
+.page {
+    padding-top: 120px;
+}
+
+.home-top {
+    background-image: url('../imgs/bg3.png');
+    padding: 50px;
+    height: 350px;
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 0px 25px 5px white;
+    box-shadow: 0px 0px 15px 5px rgb(2, 108, 179);
+    max-width: 850px;
+}
+
+.ht-headers {
+    z-index: 3;
+    position: relative;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.home-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.home-mission::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 3, 3, 0.63);
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.home-mission {
+    background-image: url('../imgs/bg2.png');
+    padding: 50px;
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 0px 15px 5px rgb(2, 108, 179);
+    max-width: 900px;
+    color: white;
+}
+
+.mission {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.missionpoints {
+    font-size: 17px;
+}
+
+.home-content {
+    width: 95%;
+    margin: auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 1100px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    height: 100%;
+}
+
+.home-content p {
+    line-height: 35px;
+    margin-right: 100px;
+}
+
+.tools {
+    height: 100%;
+    line-height: 30px;
+}
+
+.tools ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cards {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: space-between;
+    max-width: 900px;
+}
+  
+.card-img {
+    width: 180px;
+    height: auto;
+}
+  
+.card {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.479);
+    box-shadow: 0px 0px 15px 5px rgb(2, 108, 179);
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 250px;
+    height: 300px;
+}
+
+footer {
+    margin-top: 50px;
+    background:black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 240px;
+    width: 100%;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-top {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+}
+
+.footer-links a {
+    color: white !important;
+    font-size: 30px;
+}
+
+@media screen and (min-width: 1000px) {
+    .footer-top {
+        width: 70%;
+        margin: auto;
+    }
+
+    .footer-links {
+        width: 200px;
+    }
+}
+
+/*
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 2000px;}
+}
+
+.stars,
+.twinkling,
+.clouds {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+.stars {
+  background:#000000 url(../imgs/stars.png) repeat top center;
+  z-index:-1;
+}
+
+.twinkling{
+  background:transparent url(../imgs/twinkling.png) repeat top center;
+  z-index:-1;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+    background:transparent url(../imgs/clouds.png) repeat top center;
+    z-index:-2;
+    opacity: .4;
+    animation:move-clouds-back 200s linear infinite;
+}
+*/
