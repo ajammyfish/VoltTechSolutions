@@ -86,7 +86,7 @@ export default function HomePage() {
         <span style={{color: 'blueviolet'}}> business intelligence</span> reporting solutions, providing you with valuable insights 
         to make informed decisions. We take pride in our ability to develop<span style={{color: 'blueviolet'}}> bespoke 
         software</span> that perfectly aligns with your unique requirements, empowering your 
-        business to reach new heights. Partner with us and let's transform your digital 
+        business to reach new heights. Partner with us to transform your digital 
         landscape together.
         </p>
         </motion.div>
