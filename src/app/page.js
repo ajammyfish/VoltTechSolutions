@@ -77,13 +77,13 @@ export default function HomePage() {
         viewport={{ once: true }}
       >
         <p>
-        Welcome to our <span style={{color: 'blueviolet', fontWeight: 'bold'}}>VoltTechSolutions</span>, where we specialize in delivering exceptional digital 
+        Welcome to <span style={{color: 'blueviolet', fontWeight: 'bold'}}>VoltTechSolutions</span>. We specialize in delivering exceptional digital 
         solutions tailored to your specific needs. With our expertise, we craft <span style={{color: 'blueviolet'}}>fast, 
-        interactive, and modern websites</span> that not only capture attention but also 
-        provide seamless user experiences. We go beyond just websites 
-        we automate <span style={{color: 'blueviolet'}}>complex business processes</span>, streamlining your operations and 
-        increasing efficiency. Our team is equipped with the skills to create powerful 
-        <span style={{color: 'blueviolet'}}> business intelligence</span> reporting solutions, providing you with valuable insights 
+        interactive, modern websites</span> that not only capture attention but also 
+        provide seamless user experiences. We also make use of various technologies to 
+        automate <span style={{color: 'blueviolet'}}>complex business processes</span>, streamlining your operations and 
+        increasing efficiency. Equipped with the skills to create powerful 
+        <span style={{color: 'blueviolet'}}> business intelligence</span> reporting solutions, we provide you with valuable insights 
         to make informed decisions. We take pride in our ability to develop<span style={{color: 'blueviolet'}}> bespoke 
         software</span> that perfectly aligns with your unique requirements, empowering your 
         business to reach new heights. Partner with us to transform your digital 
