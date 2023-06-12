@@ -13,7 +13,7 @@ const Nav = () => {
   return (
     <nav>
       <div className="navcontainer">
-        <div className="logo">VoltTechSolutions <FaBolt style={{color: 'greenyellow'}} /></div>
+        <div className="logo">VTSolutions <FaBolt style={{color: 'greenyellow'}} /></div>
         <ul className="nav-links">
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About</Link></li>

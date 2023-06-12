@@ -23,7 +23,7 @@ export default function HomePage() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 1 }}
             >
-              <h1>Web Development and Bespoke Software Solutions</h1>
+              <h1>VoltTechSolutions - Software Solutions for your business.</h1>
             </motion.div>
 
             <motion.div
