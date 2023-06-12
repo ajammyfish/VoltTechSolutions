@@ -54,7 +54,7 @@ const AboutPage = () => {
             <h1>Bespoke Software</h1>
             <p>
               Every business has unique requirements, and off-the-shelf 
-              software may not always meet your specific needs. We'll work closely with you 
+              software may not always meet your specific needs. We&apos;ll work closely with you 
               to understand your business processes and create tailor-made software solutions. 
               We harness the power of cutting-edge technologies to develop robust and scalable 
               applications that streamline your operations, boost efficiency, and give you a 
@@ -81,7 +81,7 @@ const AboutPage = () => {
             <h1>Business Intelligence Reports</h1>
             <p>
             Our business intelligence reporting solutions provide deep insights into your 
-            organization's performance, enabling you to make informed decisions. We gather and 
+            organization&apos;s performance, enabling you to make informed decisions. We gather and 
             analyze data from various sources, transforming it into meaningful reports and 
             visualizations. Our customized dashboards and interactive charts present complex 
             information in a clear and concise manner, helping you identify trends, uncover opportunities, 
@@ -140,15 +140,15 @@ const AboutPage = () => {
                 Through this endeavor, I realized there was a significant gap in the market for affordable yet 
                 top-quality bespoke software and business analytics and with the recent advancements in no-code, 
                 low-code, and AI tools, I recognized the immense potential to offer fast and affordable solutions 
-                to individuals and businesses alike. I'm passionate about leveraging technology to empower 
+                to individuals and businesses alike. I&apos;m passionate about leveraging technology to empower 
                 businesses, and I take pride in providing tailored software solutions that streamline operations, 
                 boost productivity, and drive growth. With my expertise and a deep understanding of the challenges 
-                faced by businesses, I'm committed to delivering innovative solutions that make a 
+                faced by businesses, I&apos;m committed to delivering innovative solutions that make a 
                 real impact. 
               </p>
               <p>
                 Reach out to me to discuss the power of technology to 
-                transform your business. Let's collaborate and unlock your full potential.
+                transform your business. Let&apos;s collaborate and unlock your full potential.
               </p>
             </div>
           </div>
