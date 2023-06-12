@@ -123,7 +123,7 @@ const AboutPage = () => {
             <h1>About me</h1>
             <div className="aboutmep">
               <p>
-                Hi, I'm <span className="amspan">James</span>, the owner and sole 
+                Hi, I&apos;m <span className="amspan">James</span>, the owner and sole 
                 developer of Volt Tech Solutions.
               </p>
               <p>
