@@ -91,7 +91,6 @@ const AboutPage = () => {
           </div>
         </section>
       </motion.div>
-
       
       <motion.div
         initial={{ opacity: 0, y: -50 }}

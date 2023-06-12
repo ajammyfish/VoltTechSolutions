@@ -17,7 +17,7 @@ const Nav = () => {
         <ul className="nav-links">
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About</Link></li>
-            <li><Link href="/">Contact</Link></li>
+            <li><Link href="/contact">Contact</Link></li>
         </ul>
         <div onClick={nav ? () => setNav(false) : () => setNav(true)} className={!nav ? 'burger burgeropen' : 'burger'}>
           <div className={!nav ? "line1" : 'line1 line1open'}></div>
@@ -28,7 +28,7 @@ const Nav = () => {
       <ul  className={nav ? "nav-links-min dropdown" : 'nav-links-min'}>
         <li onClick={() => setNav(false)}><Link href="/">Home</Link></li>
         <li  onClick={() => setNav(false)}><Link href="/about">About</Link></li>
-        <li  onClick={() => setNav(false)}><Link href="/">Contact</Link></li>
+        <li  onClick={() => setNav(false)}><Link href="/contact">Contact</Link></li>
       </ul>
     </nav>
   )

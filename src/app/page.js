@@ -90,6 +90,7 @@ export default function HomePage() {
         landscape together.
         </p>
         </motion.div>
+
         <div className="tools">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
