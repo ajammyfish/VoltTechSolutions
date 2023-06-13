@@ -1,16 +1,39 @@
 'use client'
-
 import Image from "next/image"
 import webgif from '../../imgs/websitegif.gif'
 import bespokegif from '../../imgs/bespokegif.gif'
 import businessgif from '../../imgs/businessgif.gif'
 import stockprofile from '../../imgs/stockprofile.jpg'
 
+import { FaBolt } from 'react-icons/fa'
+
+import { useRef } from 'react'
+
 import { motion } from "framer-motion"
 
 const AboutPage = () => {
+
+  const ref = useRef(null);
+  const handleScroll = () => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
+  };
+
   return (
     <div className="page">
+      <section className="headingabout">
+        <h1>What do we do?</h1>
+        <p>
+          Our mission is to understand your <span className="amspan">unique</span> business challenges and leverage technology to
+          deliver effective <span className="amspan">solutions</span>.
+        </p>
+        <p>
+          Contact <span style={{cursor: 'pointer'}} onClick={handleScroll} className="amspan">James</span> to discuss your specific
+          needs and craft a <span className="amspan">customised</span> plan to <span className="amspan">enhance</span> your online presence, <span className="amspan">optimise</span> your
+          operations, and unlock new opportunities for <span className="amspan">growth</span>.
+        </p>
+        <FaBolt className="abouticon" />
+      </section>
+
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         transition={{ duration: 1 }}
@@ -111,7 +134,7 @@ const AboutPage = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        <section className="aboutme">
+        <section ref={ref} className="aboutme">
           <div className="meimage">
             <Image
               src={stockprofile}
