@@ -37,9 +37,9 @@ const BespokeSoftware = () => {
                 <ul>
                     <li><span style={{color: 'blueviolet', fontWeight: 'bold', textDecoration: 'underline'}}>Full-Stack Web Applications:</span> Customised web application development tailored to your specific business needs.</li>
                     <li><span style={{color: 'blueviolet', fontWeight: 'bold', textDecoration: 'underline'}}>Glide Apps (No-Code Platform):</span> Rapid, trustworthy, affordable development of custom mobile and web app solutions.</li>
-                    <li><span style={{color: 'blueviolet', fontWeight: 'bold', textDecoration: 'underline'}}>User friendly interfaces:</span> Designed with the user experience in mind, I'll build elegant apps that flow from start to finish.</li>
+                    <li><span style={{color: 'blueviolet', fontWeight: 'bold', textDecoration: 'underline'}}>User friendly interfaces:</span> Designed with the user experience in mind, I&apos;ll build elegant apps that flow from start to finish.</li>
                     <li><span style={{color: 'blueviolet', fontWeight: 'bold', textDecoration: 'underline'}}>Scalable and Robust Architecture:</span> Built to last and handle increasing user demands.</li>
-                    <li><span style={{color: 'blueviolet', fontWeight: 'bold', textDecoration: 'underline'}}>Continuous support and maintenance:</span> I'll continue to maintain and update your application to ensure optimal performance.</li>
+                    <li><span style={{color: 'blueviolet', fontWeight: 'bold', textDecoration: 'underline'}}>Continuous support and maintenance:</span> I&apos;ll continue to maintain and update your application to ensure optimal performance.</li>
                 </ul>
             </div>
         </motion.div>
@@ -51,7 +51,7 @@ const BespokeSoftware = () => {
                     <li>Cost-effective development and faster time-to-market compared to traditional coding</li>
                     <li>Seamless integration with various data sources</li>
                     <li>Real-time collaboration and data synchronization across devices and platforms</li>
-                    <li>Ongoing updates and optimizations leveraging Glide's platform advancements</li>
+                    <li>Ongoing updates and optimizations leveraging Glide&apos;s platform advancements</li>
                     </ul>} />
                 <Price price={49} title={'Full-Stack Web Apps'} description={<ul>
                     <li>Development tailored to your specific business needs</li>
