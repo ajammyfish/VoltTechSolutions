@@ -18,6 +18,40 @@ nav {
     padding-bottom: 10px;
 }
 
+.about-dropdown:hover .about-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    height: 150px;
+    width:200px;
+    list-style: none;
+}
+
+.about-menu li {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-menu li a {
+    text-decoration: none;
+    border: 1px solid grey;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: none;
+}
+
 .burger {
     height: 40px;
     width: 40px;
@@ -162,6 +196,51 @@ nav {
     opacity: 1 !important;
 }
 
+.min-about {
+    height: fit-content !important;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.min-about li {
+    width: 100%;
+    height: 60px;
+}
+
+.clickdown {
+    width: 100%;
+}
+
+.min-about a {
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.min-about-menu {
+    display: none;
+}
+
+.mam-expand {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: underline;
+}
+
 .nav-links-min {
     flex-direction: column;
     width: 100%;
@@ -177,13 +256,13 @@ nav {
     transform: scaleY(0);
 }
 
-.nav-links-min li {
+.mnl {
     border-bottom: 1px solid grey;
     width: 100%;
     height: 60px;
 }
 
-.nav-links-min li a {
+.min-a {
     text-decoration: none;
     color: black;
     font-size: 20px;
@@ -209,7 +288,6 @@ nav {
 }
 
 .nav-links a:hover {
-    font-size: 22px;
     transition: 1s;
     color: rgb(64, 70, 165);
 }
@@ -632,6 +710,11 @@ form button {
 .contact-info p {
     width: 100%;
     margin: 10px;
+    text-align: center;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contacticon {
@@ -731,6 +814,226 @@ form button {
     animation-timing-function: ease-in-out;
     animation-delay: 1s;
 }
+
+.wdtop h1 {
+    font-size: 44px;
+    color: rgb(119, 43, 226);
+    text-decoration: underline;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.wdtop p {
+    font-size: 22px;
+    position: relative;
+    z-index: 2;
+}
+
+.wd-points {
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+    max-width: 800px;
+}
+
+.wd-points li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.wd-icon {
+    text-align: center;
+}
+
+.wdtop {
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+    background-image: url('../imgs/wgbg.jpg');
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 0px 35px 0px rgb(82, 255, 47);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-size: cover;
+    z-index: 2;
+    text-align: center;
+}
+
+.wdtop::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.43);
+    border-radius: 15px;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.wd-prices {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.wdp-header {
+    text-decoration: underline;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.cost {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+}
+
+.price-cards {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: space-evenly;
+    max-width: 1200px;
+}
+
+
+.price-card {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.479);
+    box-shadow: 0px 0px 15px 0px rgb(3, 170, 36);
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 260px;
+    height: 430px;
+}
+
+.price-points {
+    font-size: 14px;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    list-style-position: inside;
+}
+
+.price-points li {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .price-cards {
+        flex-direction: column;
+    }
+    .price-card {
+        width: 350px !important;
+        height: 420px !important;
+        max-width: 90% !important;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .price-card {
+        height: 460px !important;
+    }
+}
+
+.bstop {
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+    background-image: url('../imgs/whitebg.jpg');
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 0px 35px 0px rgb(255, 161, 253);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-size: cover;
+    z-index: 2;
+    text-align: center;
+}
+
+.bstop::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(251, 229, 253, 0.548);
+    border-radius: 15px;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.bstop h1 {
+    font-size: 44px;
+    color: rgb(1, 10, 93);
+    text-decoration: underline;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.bstop p {
+    font-size: 22px;
+    position: relative;
+    z-index: 2;
+}
+
+.batop {
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+    background-image: url('../imgs/bg.png');
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 0px 35px 0px rgb(98, 122, 255);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-size: cover;
+    z-index: 2;
+    text-align: center;
+}
+
+.batop::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.608);
+    border-radius: 15px;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.batop h1 {
+    font-size: 44px;
+    color:white;
+    text-decoration: underline;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.batop p {
+    font-size: 22px;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
 /*
 @keyframes move-twink-back {
     from {background-position:0 0;}

@@ -44,7 +44,7 @@ const ContactPage = () => {
         <div className="contact-info">
           <p>
             <FaEnvelope className="contacticon" />
-            vtsolutions@gmail.com
+            volttechnologysolutions@gmail.com
           </p>
           <p>
             <BsFillTelephoneFill className="contacticon" />
