@@ -7,6 +7,8 @@ import Teamwork from '../imgs/tw.png'
 import Automate from '../imgs/auto.png'
 import Engage from '../imgs/eng.png'
 
+import Link from "next/link";
+
 export default function HomePage() {
   return (
     <div className="page">
@@ -23,7 +25,7 @@ export default function HomePage() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 1 }}
             >
-              <h1>VoltTechSolutions - Software Solutions for your business.</h1>
+              <h1>SouthWestSolutions - Dorset Web Designer.</h1>
             </motion.div>
 
             <motion.div
@@ -57,12 +59,12 @@ export default function HomePage() {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 2 }}
             >
-              <h1 className="missionheading">Our Team Will:</h1>
+              <h1 className="missionheading">We Will:</h1>
               <ul className='missionpoints'>
-                <li>Craft fast, interactive, modern websites</li>
+                <li>Craft fast, interactive, SEO optimised, modern websites</li>
+                <li>Create bespoke software tailored to your needs</li>
                 <li>Automate Complex Business Processes</li>
                 <li>Create powerful Business Intelligence reporting solutions</li>
-                <li>Create bespoke software tailored to your needs</li>
               </ul>
             </motion.div>
           </div>
@@ -77,17 +79,16 @@ export default function HomePage() {
         viewport={{ once: true }}
       >
         <p>
-        Welcome to <span style={{color: 'blueviolet', fontWeight: 'bold'}}>VoltTechSolutions</span>. We specialize in delivering exceptional digital 
-        solutions tailored to your specific needs. With our expertise, we craft <span style={{color: 'blueviolet'}}>fast, 
-        interactive, modern websites</span> that not only capture attention but also 
-        provide seamless user experiences. We also make use of various technologies to 
-        automate <span style={{color: 'blueviolet'}}>complex business processes</span>, streamlining your operations and 
-        increasing efficiency. Equipped with the skills to create powerful 
-        <span style={{color: 'blueviolet'}}> business intelligence</span> reporting solutions, we provide you with valuable insights 
-        to make informed decisions. We take pride in our ability to develop<span style={{color: 'blueviolet'}}> bespoke 
-        software</span> that perfectly aligns with your unique requirements, empowering your 
-        business to reach new heights. Partner with us to transform your digital 
-        landscape together.
+        Welcome to <span style={{color: 'blueviolet', fontWeight: 'bold'}}>SouthWestSolutions</span>. Based in Dorset, we specialise in delivering exceptional digital 
+        solutions tailored to your specific needs. With our expertise, we design <span style={{color: 'blueviolet'}}>fast, 
+        interactive, modern websites</span> that not only capture the attention of users, but also 
+        search engines by using the most up to date bes practices in SEO optimisation. 
+        We also take pride in our ability to develop excellent<span style={{color: 'blueviolet'}}> bespoke 
+        software</span> solutions that perfectly align with your unique business requirements aswell as 
+        making use of the lateset technologies to automate <span style={{color: 'blueviolet'}}>complex business processes</span>, 
+        streamlining your operations and increasing efficiency. Equipped with the skills to create powerful 
+        <span style={{color: 'blueviolet'}}> business intelligence</span> reporting solutions, we can provide you with valuable insights 
+        to make informed decisions.
         </p>
         </motion.div>
 
@@ -99,10 +100,10 @@ export default function HomePage() {
           viewport={{ once: true }}
         >
           <ul>
-            <li><strong>Elegant Website Design:</strong> Captivate your audience with beautifully crafted, modern websites that leave a lasting impression. By constantly keeping up to date with new technologies and best industry practices, we can guarantee your website will flow, be found, and be fast.</li>
-            <li><strong>Streamlined Process Automation:</strong> Say goodbye to manual and repetitive tasks. Our automation solutions simplify complex business processes, increasing efficiency, accuracy, and productivity. Let technology handle the workload while you focus on what matters most.</li>
-            <li><strong>Insightful Business Intelligence:</strong> Make data-driven decisions with confidence. Our powerful reporting solutions provide valuable insights into your business performance, enabling you to identify trends, uncover opportunities, and drive growth.</li>
-            <li><strong>Bespoke Software Development:</strong> We understand that every business has unique requirements. Our experienced developers will work closely with you to create tailor-made software solutions that align perfectly with your specific needs, helping you streamline operations and achieve your goals.</li>
+            <li><strong><Link style={{color: 'rgb(47, 196, 255)'}} href='about/webdesign/'>Elegant Website Design:</Link></strong> Captivate your audience with beautifully crafted, modern SEO optimised websites that leave a lasting impression. By constantly keeping up to date with new technologies and best industry practices, we can guarantee your website will flow, be found, and be fast.</li>
+            <li><strong><Link style={{color: 'rgb(47, 196, 255)'}} href='about/bespokesoftware/'>Bespoke Software Development:</Link></strong> We understand that every business has unique requirements. Our experienced developers will work closely with you to create tailor-made software solutions that align perfectly with your specific needs, helping you streamline operations and achieve your goals.</li>
+            <li><strong><Link style={{color: 'rgb(47, 196, 255)'}} href='about/bespokesoftware/'>Streamlined Process Automation:</Link></strong> Say goodbye to manual and repetitive tasks. Our automation solutions simplify complex business processes, increasing efficiency, accuracy, and productivity. Let technology handle the workload while you focus on what matters most.</li>
+            <li><strong><Link style={{color: 'rgb(47, 196, 255)'}} href='about/businessanalytics/'>Insightful Business Intelligence:</Link></strong> Make data-driven decisions with confidence. Our powerful reporting solutions provide valuable insights into your business performance, enabling you to identify trends, uncover opportunities, and drive growth.</li>
           </ul>
         </motion.div>
         </div>

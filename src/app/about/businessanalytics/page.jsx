@@ -2,6 +2,7 @@
 import Image from "next/image"
 import Price from "@/app/components/Price"
 import { FaBolt } from 'react-icons/fa'
+import {BsTsunami} from 'react-icons/bs'
 
 import { motion } from "framer-motion"
 
@@ -24,7 +25,7 @@ const BusinessAnalytics = () => {
 
 
         <div className="wd-icon">
-            <FaBolt className="abouticon" />
+            <BsTsunami className="abouticon" />
         </div>
 
         <h3 style={{textAlign: 'center', marginBottom: '70vh'}}>Full Guide Coming Soon...</h3>

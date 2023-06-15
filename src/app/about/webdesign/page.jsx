@@ -2,6 +2,7 @@
 import Image from "next/image"
 import Price from "@/app/components/Price"
 import { FaBolt } from 'react-icons/fa'
+import {BsTsunami} from 'react-icons/bs'
 
 import { motion } from "framer-motion"
 
@@ -24,7 +25,7 @@ const WebDesign = () => {
 
 
         <div className="wd-icon">
-            <FaBolt className="abouticon" />
+            <BsTsunami className="abouticon" />
         </div>
 
         <motion.div

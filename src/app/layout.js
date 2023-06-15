@@ -13,8 +13,8 @@ const poppins = Poppins({
 
 
 export const metadata = {
-  title: 'VoltTechSolutions',
-  description: 'Making your life easier.',
+  title: 'South West Solutions - Web Desgin Dorset',
+  description: 'Bespoke SEO optimised web design, software solutions and business analytics - Dorset.',
 }
 
 export default function RootLayout({ children }) {

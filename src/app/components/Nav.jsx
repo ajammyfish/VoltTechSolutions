@@ -3,6 +3,7 @@ import Link from "next/link"
 import { FaBolt } from 'react-icons/fa'
 import { useState, useEffect } from "react"
 import { AiFillCaretDown } from 'react-icons/ai'
+import {BsTsunami} from 'react-icons/bs'
 
 const Nav = () => {
 
@@ -12,7 +13,7 @@ const Nav = () => {
   return (
     <nav>
       <div className="navcontainer">
-        <div className="logo"><FaBolt className="navicon" />VTSolutions</div>
+        <div className="logo"><BsTsunami className="navicon" />SWSolutions</div>
         <ul className="nav-links">
             <li><Link href="/">Home</Link></li>
             <li className="about-dropdown">

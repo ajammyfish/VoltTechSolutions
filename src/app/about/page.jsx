@@ -4,7 +4,7 @@ import webgif from '../../imgs/websitegif.gif'
 import bespokegif from '../../imgs/bespokegif.gif'
 import businessgif from '../../imgs/businessgif.gif'
 import stockprofile from '../../imgs/stockprofile.jpg'
-
+import {BsTsunami} from 'react-icons/bs'
 import { FaBolt } from 'react-icons/fa'
 
 import { useRef } from 'react'
@@ -27,11 +27,11 @@ const AboutPage = () => {
           deliver effective <span className="amspan">solutions</span>.
         </p>
         <p>
-          Contact <span style={{cursor: 'pointer'}} onClick={handleScroll} className="amspan">James</span> to discuss your specific
+          Contact <span style={{cursor: 'pointer', textDecoration: 'underline'}} onClick={handleScroll} className="amspan">James</span> to discuss your specific
           needs and craft a <span className="amspan">customised</span> plan to <span className="amspan">enhance</span> your online presence, <span className="amspan">optimise</span> your
           operations, and unlock new opportunities for <span className="amspan">growth</span>.
         </p>
-        <FaBolt className="abouticon" />
+        <BsTsunami className="abouticon" />
       </section>
 
       <motion.div
@@ -50,7 +50,7 @@ const AboutPage = () => {
           <div className="aboutinfo">
             <h1>Website Development & Design</h1>
             <p>
-            At VoltTechSolutions, we excel in crafting captivating and 
+            At SouthWestSolutions, we excel in crafting captivating and 
             modern websites that make a lasting impression.
             We stay up-to-date with the latest industry trends and technologies to ensure your 
             website not only looks amazing but also delivers a seamless user experience. 
@@ -146,7 +146,7 @@ const AboutPage = () => {
             <div className="aboutmep">
               <p>
                 Hi, I&apos;m <span className="amspan">James</span>, the owner and sole 
-                developer of Volt Tech Solutions.
+                developer of <span className="amspan">South West Solutions</span>.
               </p>
               <p>
                 Having previously successfully built an exterior cleaning company from the 
