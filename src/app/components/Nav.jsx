@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link"
 import { FaBolt } from 'react-icons/fa'
+import { FaPhone, FaEnvelope } from 'react-icons/fa'
 import { useState, useEffect } from "react"
 import { AiFillCaretDown } from 'react-icons/ai'
 import {BsTsunami} from 'react-icons/bs'
@@ -12,6 +13,10 @@ const Nav = () => {
 
   return (
     <nav>
+      <div className="nav-contact">
+        <div className="ncp"><FaPhone className="nci" style={{marginRight: '5px'}} />07990685250</div>
+        <div className="nce"><FaEnvelope className="nci" style={{marginRight: '5px'}} />ssw.webdesign@gmail.com</div>
+      </div>
       <div className="navcontainer">
         <div className="logo"><BsTsunami className="navicon" />SWSolutions</div>
         <ul className="nav-links">

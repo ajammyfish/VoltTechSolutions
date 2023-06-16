@@ -82,7 +82,7 @@ export default function HomePage() {
         Welcome to <span style={{color: 'blueviolet', fontWeight: 'bold'}}>SouthWestSolutions</span>. Based in Dorset, we specialise in delivering exceptional digital 
         solutions tailored to your specific needs. With our expertise, we design <span style={{color: 'blueviolet'}}>fast, 
         interactive, modern websites</span> that not only capture the attention of users, but also 
-        search engines by using the most up to date bes practices in SEO optimisation. 
+        search engines by using the most up to date best practices in SEO optimisation. 
         We also take pride in our ability to develop excellent<span style={{color: 'blueviolet'}}> bespoke 
         software</span> solutions that perfectly align with your unique business requirements aswell as 
         making use of the lateset technologies to automate <span style={{color: 'blueviolet'}}>complex business processes</span>, 

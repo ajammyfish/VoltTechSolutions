@@ -3,7 +3,7 @@ import Image from "next/image"
 import webgif from '../../imgs/websitegif.gif'
 import bespokegif from '../../imgs/bespokegif.gif'
 import businessgif from '../../imgs/businessgif.gif'
-import stockprofile from '../../imgs/stockprofile.jpg'
+import me from '../../imgs/me.jpg'
 import {BsTsunami} from 'react-icons/bs'
 import { FaBolt } from 'react-icons/fa'
 
@@ -137,8 +137,9 @@ const AboutPage = () => {
         <section ref={ref} className="aboutme">
           <div className="meimage">
             <Image
-              src={stockprofile}
+              src={me}
               alt="Bespoke software"
+              className="mepic"
             />
           </div>
           <div className="meinfo">
