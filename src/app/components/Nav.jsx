@@ -23,13 +23,13 @@ const Nav = () => {
             <li><Link href="/">Home</Link></li>
             <li className="about-dropdown">
               <Link href="/about">About</Link>
-
               <ul className="about-menu">
                 <li><Link href='/about/webdesign'>Web Design</Link></li>
                 <li><Link href='/about/bespokesoftware'>Bespoke Software</Link></li>
                 <li><Link href='/about/businessanalytics'>Business Analytics</Link></li>
               </ul>
             </li>
+            <li><Link href="/blog">Blog</Link></li>
             <li><Link href="/contact">Contact</Link></li>
         </ul>
 
@@ -68,6 +68,7 @@ const Nav = () => {
           </div>
 
         </li>
+        <li className="mnl" onClick={() => setNav(false)}><Link className="min-a" href="/blog">Blog</Link></li>
         <li className="mnl" onClick={() => setNav(false)}><Link className="min-a" href="/contact">Contact</Link></li>
       </ul>
     </nav>

@@ -97,7 +97,6 @@ nav {
     height: 40px;
     width: 40px;
     background-color: white;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -105,31 +104,32 @@ nav {
     border-radius: 5px;
     display: none;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .line1open {
     transform: rotate(45deg) translate(8px, 8px);
-    transition: 1s;
+    transition: 500ms;
 }
 
 .line3open {
-    transform: rotate(-45deg) translate(8px, -8px);
-    transition: 1s;
+    transform: rotate(-45deg) translate(7px, -7px);
+    transition: 500ms;
 }
 
 .line2open {
     transform: translateX(-40px);
     visibility: hidden;
-    transition: 1s;
+    transition: 500ms;
 }
 
 .line1, .line2, .line3 {
-    height: 6px;
+    height: 2px;
     width: 30px;
     background-color: black;
     border-radius: 3px;
-    transition: 1s;
-    transition: 1s;
+    transition: 500ms;
+    transition: 500ms;
 }
 
 .navcontainer {
@@ -335,6 +335,7 @@ nav {
 
 .page {
     padding-top: 120px;
+    min-height: 100vh;
 }
 
 .home-top {
@@ -1086,6 +1087,121 @@ form button {
     position: relative;
     z-index: 2;
     color: white;
+}
+
+.blog-header {
+    background-image: url('../imgs/durdlenight.avif');
+    height: 100px;
+    background-size: cover;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    background-position: top;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 3px rgb(255, 93, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.blog-header h1 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.blog-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 3, 3, 0.307);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.blog-cards {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    justify-content: space-between;
+    color: black;
+}
+
+.blog-card-container {
+    padding: 15px;
+    width: 350px;
+    border: 1px solid black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 5px 0px 10px 0px black;
+    max-width: 90%;
+}
+
+.blog-card h1 {
+    font-size: 24px;
+}
+
+.blog-card img {
+    width: 90%;
+    height: auto;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 850px) {
+    .blog-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-card-container {
+        margin-bottom: 20px;
+    }
+}
+
+.blog-content {
+    width: 800px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.blog-content h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.blog-content h4 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+
+.blog-content ul {
+    list-style: inside;
+}
+
+.blog-content p {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /*
