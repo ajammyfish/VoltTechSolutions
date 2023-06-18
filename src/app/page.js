@@ -48,6 +48,53 @@ export default function HomePage() {
       </motion.div>
 
       <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <div className="home-cube">
+          
+          <div class="cube-container">
+            <div class="cube-face front">
+              <h3>Expert Web Design</h3>
+            </div>
+            <div class="cube-face back">
+              <h3>Professional SEO</h3>
+            </div>
+            <div class="cube-face right">
+              <h3>Stunning Bespoke Software</h3>
+            </div>
+            <div class="cube-face left">
+              <h3>Powerful Data Analytics Dashboards</h3>
+            </div>
+            <div class="cube-face top">
+            </div>
+            <div class="cube-face bottom">
+            </div>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          transition={{ duration: 1 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <div className="cta">
+            <h1><Link href="/contact">Call us today to get started!</Link></h1>
+          </div>
+        </motion.div>
+
+      </div>
+
+
+      </motion.div>
+
+
+
+
+
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -61,10 +108,11 @@ export default function HomePage() {
             >
               <h1 className="missionheading">We Will:</h1>
               <ul className='missionpoints'>
-                <li>Craft fast, interactive, SEO optimised, modern websites</li>
+                <li>Craft fast, interactive, search engine optimised, modern websites</li>
                 <li>Create bespoke software tailored to your needs</li>
                 <li>Automate Complex Business Processes</li>
                 <li>Create powerful Business Intelligence reporting solutions</li>
+                <li>Understand your exact needs</li>
               </ul>
             </motion.div>
           </div>
@@ -82,7 +130,7 @@ export default function HomePage() {
         Welcome to <span style={{color: 'blueviolet', fontWeight: 'bold'}}>SouthWestSolutions</span>. Based in Dorset, we specialise in delivering exceptional digital 
         solutions tailored to your specific needs. With our expertise, we design <span style={{color: 'blueviolet'}}>fast, 
         interactive, modern websites</span> that not only capture the attention of users, but also 
-        search engines by using the most up to date best practices in SEO optimisation. 
+        search engines by using the most up to date best practices in SEO. 
         We also take pride in our ability to develop excellent<span style={{color: 'blueviolet'}}> bespoke 
         software</span> solutions that perfectly align with your unique business requirements aswell as 
         making use of the lateset technologies to automate <span style={{color: 'blueviolet'}}>complex business processes</span>, 
