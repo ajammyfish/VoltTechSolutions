@@ -9,6 +9,9 @@ import Engage from '../imgs/eng.png'
 
 import Link from "next/link";
 
+import Image from "next/image";
+import gif from '../imgs/sws.gif'
+
 export default function HomePage() {
   return (
     <div className="page">
@@ -54,23 +57,23 @@ export default function HomePage() {
         viewport={{ once: true }}
       >
         <div className="home-cube">
-          
-          <div class="cube-container">
-            <div class="cube-face front">
+
+          <div className="cube-container">
+            <div className="cube-face front">
               <h3>Expert Web Design</h3>
             </div>
-            <div class="cube-face back">
+            <div className="cube-face back">
               <h3>Professional SEO</h3>
             </div>
-            <div class="cube-face right">
+            <div className="cube-face right">
               <h3>Stunning Bespoke Software</h3>
             </div>
-            <div class="cube-face left">
+            <div className="cube-face left">
               <h3>Powerful Data Analytics Dashboards</h3>
             </div>
-            <div class="cube-face top">
+            <div className="cube-face top">
             </div>
-            <div class="cube-face bottom">
+            <div className="cube-face bottom">
             </div>
         </div>
 
@@ -156,6 +159,12 @@ export default function HomePage() {
         </motion.div>
         </div>
       </section>
+
+      
+      <div className="homesws">
+            <Image src={gif} className="wd-sws"/>
+        </div>
+
 
       <div className="cards">
         <motion.div

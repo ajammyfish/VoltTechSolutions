@@ -4,6 +4,8 @@ import Price from "@/app/components/Price"
 import { FaBolt } from 'react-icons/fa'
 import {BsTsunami} from 'react-icons/bs'
 
+import gif from '../../../imgs/sws.gif'
+
 import { motion } from "framer-motion"
 
 const WebDesign = () => {
@@ -45,6 +47,53 @@ const WebDesign = () => {
             </div>
         </motion.div>
 
+        <div className="swsdiv">
+            <Image src={gif} className="wd-sws"/>
+        </div>
+
+        <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+        >
+            <div className="wd-tools">
+                <h1>What do I use?</h1>
+                <p>
+                    There are a range of technologies available to web designers and developers. I specialise in the following:  
+                </p>
+                <ul>
+                    <li><b>Hard-coding</b> the entire site using a combination programming languages and libraries, allowing for complete customisation and control.</li>
+                    <li><b>WebFlow, Shopify and Wordpress.</b> Low/no-code website builders that allow us to streamline the development process.</li>
+                    <li><b>Figma</b>, a design tool used to create prototypes.</li>
+                </ul>
+                <div className="wd-line"></div>
+                    
+                <p>
+                    Choosing the right tools for 
+                    the job comes down to a range of factors: 
+                </p>
+                <ul style={{textAlign: 'center'}}>
+                    <li className="wdtli">Project Requirements</li>
+                    <li className="wdtli">Design flexibility</li>
+                    <li className="wdtli">Time/budget contraints</li>
+                    <li className="wdtli">Scalability and Future Growth</li>
+                    <li className="wdtli">Client expectations</li>
+                </ul>
+                <div className="wd-line"></div>
+                
+
+                <h3 style={{textAlign: 'center', textDecoration: 'underline', marginBottom: '20px'}}>The development process:</h3>
+                <ul style={{width: '80%', margin: 'auto'}}>
+                    <li style={{marginBottom: '5px', listStyle: 'outside'}}>A collaborative discussion with the client to understand the project requirements and design preferences.</li>
+                    <li style={{marginBottom: '5px', listStyle: 'outside'}}>Determine the clients budget and time expectations.</li>
+                    <li style={{marginBottom: '5px', listStyle: 'outside'}}>Use <b>Figma</b> to create a design/prototype to show the client for review.</li>
+                    <li style={{marginBottom: '5px', listStyle: 'outside'}}>Complete the project and provide ongoing support.</li>
+                </ul>
+
+            </div>
+        </motion.div>
+
         <div className="wd-prices">
             <h1 className="wdp-header">Pricing</h1>
             <div className="price-cards">
@@ -65,7 +114,7 @@ const WebDesign = () => {
                     <li>Content population assistance</li>
                     <li>Basic website analytics setup</li>
                     </ul>} />
-                <Price price={499} title={'Pro Tier'} description={<ul>
+                <Price price={599} title={'Pro Tier'} description={<ul>
                     <li>All features included in the Starter and Advanced Tiers</li>
                     <li>Up to 15 pages</li>
                     <li>Payments Integration</li>
@@ -75,7 +124,6 @@ const WebDesign = () => {
                     <li>30 minute call every month for ongoing support and maintenance</li>
                     </ul>} />
             </div>
-
         </div>
     </div>
   )
